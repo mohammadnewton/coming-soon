@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+}
+
+.notice-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-inline: 8rem;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.notice-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.notice-section h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.notice-section h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+h3 + div p:first-child {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.notice-section form {
+  display: flex;
+  align-items: center;
+  width: 536px;
+  height: 60px;
+}
+
+form input {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #000;
+  width: 405px;
+  height: auto;
+}
+
+form button {
+  width: 131px;
+  padding: 0.75rem;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  background-color: #3555FA;
+}
+
+::placeholder {
+  color: #909090;
+}
+
+h3 + div p:last-child {
+  font-size: 14px;
+  color: #909090;
+  margin-bottom: 1rem;
+}
+
+h3 + div p:last-child a {
+  color: white;
+}
+
+.user-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 18px;
+}
+
+.user-details img {
+  width: 34px;
+  height: 34px;
+}
+
+.reminder-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 20px;
+  width: 50%;
+  background-image: url(./assets/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 2rem;
+}
+
+.countdown {
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.countdown span {
+  font-size: 16px;
+  display: flex;
+}
